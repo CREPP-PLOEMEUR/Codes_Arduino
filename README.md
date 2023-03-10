@@ -4,7 +4,7 @@
 
 - Bases 
 
-    Les codes pour découvrir les capteurs et élements de base de l'electronique
+    Les codes pour découvrir les capteurs et éléments de base de l’Électronique
 
     - La syntaxe
     - Les leds
@@ -17,7 +17,7 @@
     - HC-06 ou HC-05
     - X-Bee
 
-- des outils de débuggage
+- des outils de débogage
 
     - Un scanner I2C
     - Positionner des servomoteurs
@@ -28,7 +28,7 @@
 
 - Moteurs et puissance
 
-    Les codes pour controler les moteurs, servomoteurs et moteurs pas-à-pas
+    Les codes pour contrôler les moteurs, servomoteurs et moteurs pas-à-pas
 
 - Notions avancées
 

@@ -42,7 +42,7 @@ void onEvent() {
 	}else
 	{
 		Serial.println("OFF");
-	}s
+	}
 	digitalWrite(ledPin, state); //Met à jour l'état de la LED
 }
 	

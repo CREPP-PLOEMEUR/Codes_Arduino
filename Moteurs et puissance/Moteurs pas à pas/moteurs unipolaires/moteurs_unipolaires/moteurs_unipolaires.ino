@@ -13,7 +13,7 @@
      
     void setup() {
   
-      moteur.setSpeed(5); //On définit la vitesse à 10 tr/min
+      moteur.setSpeed(9); //On définit la vitesse à 10 tr/min
   
     }//Fin setup
      
