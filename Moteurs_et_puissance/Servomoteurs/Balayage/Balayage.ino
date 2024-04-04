@@ -9,29 +9,32 @@
  * Autorisation de redistribuer et modifier le code sous les termes de la Licence GNU-GPL 
 
  */
-  #include <Servo.h>      //Inclusion de la bibliothèque Servo
-  Servo myservo;  // Création d'un objet Servo
-  int pos = 0;    //Angle du servomoteur
-  
-  void setup() {
+  #include <Servo.h>
 
-    myservo.attach(11);  //Choix de la broche du servo moteur
+#define SERVO_PIN 11 //broche de commande
 
-  }
-  
-  void loop() {
+//Inclusion de la bibliothèque Servo
+Servo myServo; // Création d'un objet Servo
 
-    for (pos = 0; pos <= 180; pos += 1) { //Parcours la plage angulaire [0-180] degré par degré
 
-      myservo.write(pos);              //Actualise la position 
-      delay(15);                       //Attend 15 ms avant l'actualisation
+void setup() 
+{
+  myServo.attach(SERVO_PIN);    //Choix de la broche du servo moteur
+}
+void loop() 
+{
+  for (int pos = 0; pos <= 180; pos += 1) 
+  { 
+    myServo.write(pos);  //Actualise la position
+    delay(15);
 
-    }//Fin for
+  }//Fin for
 
-    for (pos = 180; pos >= 0; pos -= 1) {     //Parcours la plage angulaire [0-180] degré par degré
 
-      myservo.write(pos);              //Actualise la position 
-      delay(15);                       //Attend 15 ms avant l'actualisation
+  for (int pos = 180; pos >= 0; pos -= 1) 
+  {
+    myServo.write(pos);  //Actualise la position
+    delay(15);
 
-    }//Fin for
-  }//Fin loop
+  }//Fin for
+}//Fin loop
